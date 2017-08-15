@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.1.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Persist documents in MongoDB
+gem 'mongoid', '~> 6.2.0'
 # Ruby Redis driver
 gem 'redis', '~>3.2'
 
