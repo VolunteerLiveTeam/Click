@@ -5,8 +5,6 @@ gem 'rails', '~> 5.1.3'
 gem 'puma', '~> 3.7'
 # Persist documents in MongoDB
 gem 'mongoid', '~> 6.2.0'
-# Ruby Redis driver
-gem 'redis', '~>3.2'
 
 # Use mongoid-slug for pretty urls
 gem 'mongoid-slug', '~> 5.2'
