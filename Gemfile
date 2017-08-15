@@ -8,6 +8,9 @@ gem 'mongoid', '~> 6.2.0'
 # Ruby Redis driver
 gem 'redis', '~>3.2'
 
+# Use mongoid-slug for pretty urls
+gem 'mongoid-slug', '~> 5.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

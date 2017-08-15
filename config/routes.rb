@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root :to => redirect('https://liveteam.org/')
+
+  get '/go/:id', to: 'links#destination', as: 'link_destination'
+  resources :links, only: [:show, :new, :create]
 end

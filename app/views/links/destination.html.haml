@@ -1,0 +1,18 @@
+- content_for :meta do
+  -# Redirect for users
+  %meta{'http-equiv': 'refresh', 'content': "0; url=#{@link.url}"}
+
+  -# Facebook/Open Graph
+  %meta{property: 'og:title', content: @link.name}
+  %meta{property: 'og:description', content: @link.description}
+  %meta{property: 'og:url', content: @link.url}
+  %meta{property: 'og:image', content: @link.image_url}
+  %meta{property: 'og:type', content: 'article'}
+  %meta{property: 'og:site_name', content: 'Volunteer Live Team'}
+
+  -# Twitter Cards
+  %meta{property: 'twitter:card', content: 'summary_large_image'}
+  %meta{property: 'twitter:title', content: @link.name}
+  %meta{property: 'twitter:description', content: @link.description}
+  %meta{property: 'twitter:image', content: @link.image_url}
+  %meta{property: 'twitter:site', content: '@VLiveTeam'}

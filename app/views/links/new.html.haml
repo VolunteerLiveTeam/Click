@@ -1,0 +1,17 @@
+= form_for @link do |f|
+  = f.label :name
+  = f.text_field :name, placeholder: "Name"
+
+  = f.label :description
+  = f.text_field :description, placeholder: "Short Description"
+
+  = f.label :image_url
+  = f.text_field :image_url, placeholder: "Image URL"
+
+  = f.label :thread_id
+  = f.text_field :thread_id, placeholder: "Reddit Thread ID"
+
+  = f.label :link
+  = f.text_field :link, placeholder: "Short Link"
+
+  = f.submit "Create Link"
