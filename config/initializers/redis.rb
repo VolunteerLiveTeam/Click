@@ -1,1 +1,1 @@
-Redis.current = Redis.new(:host => ENV["REDIS_HOST"] || '127.0.0.1', :port => ENV["REDIS_PORT"] || 6379)
+Redis.current = Redis.new(:url => ENV["REDIS_URL"] || 'redis://127.0.0.1:6379')
